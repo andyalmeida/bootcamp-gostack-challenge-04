@@ -1,0 +1,40 @@
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+body {
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  background: #F2F2F2;
+  color: #3E3E3E;
+}
+
+#header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: #4A90E2;
+  color: #FFF;
+  font-weight: bold;
+  font-size: 15px;
+  height: 64px;
+  padding: 0 40px;
+}
+
+#header div {
+  display: flex;
+  align-items: center;
+}
+
+#header div a {
+  color: #FFF;
+  text-decoration: none;
+}
+
+#header div img {
+  margin-left: 16px;
+}
+
+
