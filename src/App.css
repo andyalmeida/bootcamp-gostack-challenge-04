@@ -1,3 +1,4 @@
+
 * {
   margin: 0;
   padding: 0;
@@ -37,8 +38,12 @@ body {
   margin-left: 16px;
 }
 
+#post-list {
+  margin: 20px;
+}
+
 .post {
-  width: 700px;
+  max-width: 700px;
   background: #FFF;
   margin: 0 auto;
   border-radius: 5px;
@@ -73,4 +78,23 @@ body {
   padding: 24px 0;
   border-bottom: 1px solid #EEEEEE;
   white-space: pre-wrap;
+  margin-bottom: 20px;
 }
+
+.post .comment {
+  display: flex;
+}
+
+.post .comment img {
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+.post .comment p {
+  background: #EEEEEE;
+  padding: 10px 15px;
+  border-radius: 15px;
+  margin-bottom: 10px;
+} 
