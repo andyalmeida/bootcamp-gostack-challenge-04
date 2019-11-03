@@ -1,3 +1,18 @@
+:root {
+  --primaryBackground: #F2F2F2;
+  --headerBackground: #4A90E2;
+  --postBackground: #FFFFFF;
+  --commentBackground: #EEEEEE;
+  --primaryTextColor: #3E3E3E;
+}
+
+:root[data-theme="dark"] {
+  --primaryBackground: #121212;
+  --headerBackground: #3700B3;
+  --postBackground: #212121;
+  --commentBackground: #4b4b4b;
+  --primaryTextColor: #FFFFFF;
+}
 
 * {
   margin: 0;
@@ -8,15 +23,16 @@
 body {
   font-family: Helvetica, Arial, sans-serif;
   font-size: 14px;
-  background: #F2F2F2;
-  color: #3E3E3E;
+  background: var(--primaryBackground);
+  color: var(--primaryTextColor);
+  transition: all 0.20s linear;
 }
 
 #header {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  background: #4A90E2;
+  background: var(--headerBackground);
   color: #FFF;
   font-weight: bold;
   font-size: 15px;
@@ -36,6 +52,8 @@ body {
 
 #header div img {
   margin-left: 16px;
+  width: 25px;
+  cursor: pointer;
 }
 
 #post-list {
@@ -44,7 +62,7 @@ body {
 
 .post {
   max-width: 700px;
-  background: #FFF;
+  background: var(--postBackground);
   margin: 0 auto;
   border-radius: 5px;
   padding: 24px;
@@ -76,7 +94,7 @@ body {
 
 .post > p {
   padding: 24px 0;
-  border-bottom: 1px solid #EEEEEE;
+  border-bottom: 1px solid var(--commentBackground);
   white-space: pre-wrap;
   margin-bottom: 20px;
 }
@@ -93,7 +111,7 @@ body {
 }
 
 .post .comment p {
-  background: #EEEEEE;
+  background: var(--commentBackground);
   padding: 10px 15px;
   border-radius: 15px;
   margin-bottom: 10px;
