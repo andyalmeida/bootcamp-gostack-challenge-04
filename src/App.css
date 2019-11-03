@@ -37,4 +37,40 @@ body {
   margin-left: 16px;
 }
 
+.post {
+  width: 700px;
+  background: #FFF;
+  margin: 0 auto;
+  border-radius: 5px;
+  padding: 24px;
+  margin-top: 24px;
+  -moz-box-shadow: 0 0 5px rgba(0,0,0,.25);
+  -webkit-box-shadow: 0 0 5px rgba(0,0,0,.25);
+  box-shadow: 0 0 5px rgba(0,0,0,.25);
+}
 
+.post header {
+  display: flex;
+}
+
+.post header img {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+.post header p {
+  font-weight: bold;
+}
+
+.post header small {
+  font-size: 11px;
+  color: #9A9A9A;
+}
+
+.post > p {
+  padding: 24px 0;
+  border-bottom: 1px solid #EEEEEE;
+  white-space: pre-wrap;
+}
